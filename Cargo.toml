@@ -1,10 +1,11 @@
 [package]
 name = "gfx_types"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["MikeLanDSBR <contato@mikelandsbr.com.br>"]
 edition = "2021"
 description = "Core graphics types shared across kernel and userspace"
-documentation = "https://docs.rs/redpowder"
+repository = "https://github.com/redstone-os/gfx_types"
+documentation = "https://docs.rs/gfx_types"
 readme = "README.md"
 license = "MIT"
 keywords = ["os", "kernel", "syscall", "redstone", "no_std"]
