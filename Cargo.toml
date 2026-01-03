@@ -1,15 +1,15 @@
 [package]
 name = "gfx_types"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["MikeLanDSBR <contato@mikelandsbr.com.br>"]
 edition = "2021"
-description = "Core graphics types shared across kernel and userspace"
+description = "Core graphics types shared between kernel and userspace - RedstoneOS"
+license = "MIT"
 repository = "https://github.com/redstone-os/gfx_types"
 documentation = "https://docs.rs/gfx_types"
 readme = "README.md"
-license = "MIT"
-keywords = ["os", "kernel", "syscall", "redstone", "no_std"]
-categories = ["no-std", "os"]
+keywords = ["graphics", "kernel", "compositor", "no_std", "redstone"]
+categories = ["no-std", "graphics"]
 
 [lib]
 harness = false
@@ -17,5 +17,10 @@ test = false
 bench = false
 doctest = false
 
+[dependencies]
+rdsmath = { path = "../rdsmath", version = "0.1.0" }
+
 [features]
 default = []
+alloc = []
+std = ["alloc"]
